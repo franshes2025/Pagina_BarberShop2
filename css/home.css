@@ -1,52 +1,73 @@
-
-   body {
+body {
     background-image: url('https://github.com/franshes2025/Pagina_BarberShop2/raw/main/img/fondo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-    h1{
-        font-size: 5vw;;
-        text-align: center;
-        margin-top:120px ;
-        font-family: "Lobster Two", sans-serif;
-        font-weight: 800;
-        font-style: normal;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
-    }
-    h2{
-        font-size: 5vw;
-        margin-top:80px ;
-        text-align: center;
-        font-family: "Lobster Two", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
 
-    }
-    div{
-        color: #e7d68b;
-        border: 5px solid white;
-        border-radius: 10px;
-        font-size: 20px;
-        width: 15%;
-        text-align: center;
-        margin: auto;
-        margin: 80px auto;
-    }
-    p{
-        
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin: 20px 10px;
-    }
-    a{
-        text-decoration: none;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
-    }
-    div:hover{
-        background-color: rgb(58, 58, 58);
-        color: #f1cd4d ;
-        box-shadow: 0 0 10px black;
+h1, h2 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+    margin: 20px 0;
+}
+
+.main-title {
+    font-size: 8vw;
+    color: #fafafa;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 800;
+    margin-top: 120px;
+}
+
+.sub-title {
+    font-size: 5vw;
+    color: #e7d68b;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+.cta-button {
+    display: block;
+    width: 60%;
+    max-width: 200px;
+    margin: 40px auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cta-button div {
+    color: #e7d68b;
+    border: 5px solid white;
+    border-radius: 10px;
+    font-size: 1.5rem; /* Ajuste de tamaño */
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.cta-button div:hover {
+    background-color: rgb(58, 58, 58);
+    color: #f1cd4d;
+    box-shadow: 0 0 10px black;
+}
+
+p {
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 10vw;
     }
 
+    .sub-title {
+        font-size: 7vw;
+    }
+
+    .cta-button div {
+        font-size: 4vw; /* Ajuste de tamaño para pantallas pequeñas */
+    }
+}
